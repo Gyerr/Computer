@@ -36,7 +36,7 @@ public class CaesarTester {
             }
             else if(choice.equals("q")) {
                 System.out.println("Thank you for using the program.");
-                System.exit(0);
+                break;
             }
             else {
                 System.out.println("Your slection was invalid, please try again.");

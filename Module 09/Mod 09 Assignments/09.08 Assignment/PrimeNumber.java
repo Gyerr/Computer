@@ -19,11 +19,13 @@ public class PrimeNumber {
         int count = 0;
         for (int number = lowerLimit; number <= upperLimit; number++) {
             if(isPrime(number)) {
-                System.out.println(number);
+                //System.out.println(number);
                 count++;
             }
 
         }
+
+        in.close();
 
         System.out.println("Number of primes generated: " + count);
 
@@ -31,7 +33,7 @@ public class PrimeNumber {
     }
 
     public static boolean isPrime(int number) {
-        for (int i = lowerLimit; i < number; i++) {
+        for (int i = 2; i < number; i++) {
             if (number%i == 0) {
                 return false;
             }
