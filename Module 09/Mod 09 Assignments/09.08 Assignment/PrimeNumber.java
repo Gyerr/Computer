@@ -19,7 +19,7 @@ public class PrimeNumber {
         int count = 0;
         for (int number = lowerLimit; number <= upperLimit; number++) {
             if(isPrime(number)) {
-                //System.out.println(number);
+                System.out.println(number);
                 count++;
             }
 
