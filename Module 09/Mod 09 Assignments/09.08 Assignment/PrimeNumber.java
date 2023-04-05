@@ -1,3 +1,20 @@
+/*
+ * Generates a list of prime numbers from lower limit to upper limit set by the user. Counts the number 
+ * of all primes generated.
+ * 
+ * @author Gruhith Yerramalli
+ * 
+ * @version 4/5/23
+ * 
+ * PMR
+ * ----------------------------------------------------------
+ * (+): easy to set up constructor and the static methods in order to loop and count prime numbers
+ * 
+ * (-): no difficulties but maybe a little with the isPrime method.
+ * -----------------------------------------------------------
+ * In the Future: Practice more with this and make sure not to set the max limit to integer limit because it takes forever and i gave up after 2million. :)
+ */
+
 import java.util.Scanner;
 
 public class PrimeNumber {
