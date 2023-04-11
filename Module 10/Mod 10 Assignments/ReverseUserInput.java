@@ -20,7 +20,7 @@ public class ReverseUserInput
             System.out.println();
         else
             reverseInput();
-        System.out.println(aWord);
+        System.out.println(aWord); 
     }
 
     public static void main(String[] args)
