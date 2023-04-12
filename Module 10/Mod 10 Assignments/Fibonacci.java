@@ -1,4 +1,14 @@
-
+/**
+ * 
+ * @author Gruhith Yerramalli 
+ * @version 4/11/23 
+ * PMR 
+ * ------------------------------------------------------ 
+ * (+): Easy to use recursion and create the public static void method. 
+ * (-): A little hard to do the recursion of the integers and generate sequence. Ran into problem of no output created but i realize print statment not in while loop. 
+ * -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+ * In the Future: practice mroe recursion and experiment more.
+ */
 import java.util.Scanner;
 
 public class Fibonacci {
@@ -32,7 +42,8 @@ public class Fibonacci {
                     counter = counter + 1;
                 }
 
-                System.out.println("The Fibonacci of " + n + " is " + fibonacci);   
+                System.out.println("The Fibonacci of " + n + " is " + fibonacci);  
+                in.close();
             }
         }
         
