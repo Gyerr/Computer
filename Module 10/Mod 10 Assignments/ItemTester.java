@@ -38,7 +38,7 @@ public class ItemTester {
         printTable(items);
 
         sortPrice(items, "d");
-        System.out.println("\nSorted by Price (Ascending):");
+        System.out.println("\nSorted by Price (Descending):");
         printTable(items);
 
         sortQuantity(items, 1, 4, 8);
