@@ -1,3 +1,4 @@
+
 /**
  * This is a class that tests the Card class.
  *
@@ -27,7 +28,7 @@ public class CardTester
       System.out.println();
 
       // Test card 2
-
+      Card sixSpades = new Card("six", "spades", 6);
       // Test card 3
 
       // Test matches() method
