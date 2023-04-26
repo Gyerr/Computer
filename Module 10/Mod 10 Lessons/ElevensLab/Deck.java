@@ -63,7 +63,7 @@ public class Deck
    public int size()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-      return cards.size();
+      return size;
    }
 
    /**
@@ -84,9 +84,12 @@ public class Deck
    public Card deal()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-      for (int i = cards.size(); i >= 0; i-) {
-         
+      if (isEmpty()) {
+         return null;
       }
+      size--;
+      Card c = cards.get(size);
+      return c;
    }
 
    /**
