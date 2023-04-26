@@ -37,9 +37,17 @@ public class Deck
       // loop through the parameter arrays to add new cards
       // assign size of cards to the size instance variable
       // shuffle cards
+      /*
       for (int i = 0; i < ranks.length; i++) {
          Card card = new Card(ranks[i], suits[i], values[i]);
          deck.add(i, card); 
+      }
+      */
+      for (int i = 0; i < suits.length; i++) {
+         for (int j = 0; i < ranks.length; j++) {
+            Card card = new Card(ranks[j], suits[i], values[j]);
+            deck.add(i, card); 
+         }
       }
       size = deck.size();
    }
