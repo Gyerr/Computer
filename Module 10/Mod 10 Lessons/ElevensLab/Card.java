@@ -68,7 +68,7 @@ public class Card {
    public boolean matches(Card otherCard)
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-      if(suit().equals(otherCard.suit()) && rank().equalsIgnoreCase(otherCard.rank()) && pointValue() == otherCard.pointValue()) {
+      if(suit().equalsIgnoreCase(otherCard.suit()) && rank().equalsIgnoreCase(otherCard.rank()) && pointValue() == otherCard.pointValue()) {
          return true;
       }
       return false;
