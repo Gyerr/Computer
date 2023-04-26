@@ -32,13 +32,16 @@ public class Deck
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 
       // initialize cards as a new ArrayList
+      ArrayList<Card> deck = new ArrayList<Card>();
+      cards = deck;
       // loop through the parameter arrays to add new cards
       // assign size of cards to the size instance variable
       // shuffle cards
       for (int i = 0; i < ranks.length; i++) {
-         cards.set(i, new Card(ranks[i], suits[i], values[i])); 
+         Card card = new Card(ranks[i], suits[i], values[i]);
+         deck.add(i, card); 
       }
-      size = cards.size();
+      size = deck.size();
    }
 
    /**

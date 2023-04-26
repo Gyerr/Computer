@@ -16,10 +16,10 @@ public class DeckTester
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
       /* Uncomment blocks of code to test the Deck class */
 
-      String[] myRanks = {"queen"};
-      String[] mySuits = {"heart"};
-      int[] myPointValues = {12};
-      Deck myDeck = new Deck();
+      String[] myRanks = {"queen", "king", "jack", "ten"};
+      String[] mySuits = {"heart", "diamond", "spade", "club"};
+      int[] myPointValues = {12, 13, 11, 10};
+      Deck myDeck = new Deck(myRanks, mySuits, myPointValues);
 
       System.out.println("**** Original Deck Methods ****");
       System.out.println("  toString: \n" + myDeck.toString());
