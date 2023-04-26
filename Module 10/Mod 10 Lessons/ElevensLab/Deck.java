@@ -35,7 +35,10 @@ public class Deck
       // loop through the parameter arrays to add new cards
       // assign size of cards to the size instance variable
       // shuffle cards
-
+      for (int i = 0; i < ranks.length; i++) {
+         cards.set(i, new Card(ranks[i], suits[i], values[i])); 
+      }
+      size = cards.size();
    }
 
    /**
@@ -45,6 +48,12 @@ public class Deck
    public boolean isEmpty()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+      //if (cards.size() == 0) {
+      //   return true;
+      //}
+      //return false;
+
+      return cards.isEmpty();
    }
 
    /**
@@ -54,6 +63,7 @@ public class Deck
    public int size()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+      return cards.size();
    }
 
    /**
@@ -74,6 +84,9 @@ public class Deck
    public Card deal()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+      for (int i = cards.size(); i >= 0; i-) {
+         
+      }
    }
 
    /**
