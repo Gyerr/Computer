@@ -32,8 +32,7 @@ public class Deck
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 
       // initialize cards as a new ArrayList
-      ArrayList<Card> deck = new ArrayList<Card>();
-      cards = deck;
+      this.cards = new ArrayList<Card>();
       // loop through the parameter arrays to add new cards
       // assign size of cards to the size instance variable
       // shuffle cards
@@ -44,12 +43,12 @@ public class Deck
       }
       */
       for (int i = 0; i < suits.length; i++) {
-         for (int j = 0; i < ranks.length; j++) {
+         for (int j = 0; j < ranks.length; j++) {
             Card card = new Card(ranks[j], suits[i], values[j]);
-            deck.add(i, card); 
+            this.cards.add(card);
          }
       }
-      size = deck.size();
+      this.size = this.cards.size();
    }
 
    /**
@@ -59,12 +58,11 @@ public class Deck
    public boolean isEmpty()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-      //if (cards.size() == 0) {
-      //   return true;
-      //}
-      //return false;
+      if (this.cards.size() == 0) {
+         return true;
+      }
+      return false;
 
-      return cards.isEmpty();
    }
 
    /**
@@ -74,7 +72,7 @@ public class Deck
    public int size()
    {
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-      return size;
+      return this.cards.size();
    }
 
    /**
@@ -97,10 +95,11 @@ public class Deck
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
       if (isEmpty()) {
          return null;
-      }
-      size--;
-      Card c = cards.get(size);
-      return c;
+     }
+     size--;
+     Card card = cards.get(size);
+     cards.remove(size);
+     return card;
    }
 
    /**

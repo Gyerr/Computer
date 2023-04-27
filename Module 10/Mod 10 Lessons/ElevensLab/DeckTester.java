@@ -16,9 +16,9 @@ public class DeckTester
       /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
       /* Uncomment blocks of code to test the Deck class */
 
-      String[] myRanks = {"jack", "queen", "king"};
-      String[] mySuits = {"blue", "red"};
-      int[] myPointValues = {11, 12, 13};
+      String[] myRanks = {"queen"};
+      String[] mySuits = {"hearts"};
+      int[] myPointValues = {12};
       Deck myDeck = new Deck(myRanks, mySuits, myPointValues);
 
       System.out.println("**** Original Deck Methods ****");

@@ -43,7 +43,7 @@ public class Fibonacci {
                 }
 
                 System.out.println("The Fibonacci of " + n + " is " + fibonacci);  
-                in.close();
+                
             }
         }
         
