@@ -1,0 +1,4 @@
+Problems that I got wrong:
+Q5: I got this wrong because I said that only the method with super(0) and setting y to 0 would work. But in reality, the method setting y=0 works also because x is already initialized to zero.
+Q6: The method calls the act() method of the Dog class which also calls the eat method and the eat method in the UnderDog class calls the super.eat meaning that the object will run eat bark sleep.
+Q10: I and III work because I initializes name while others are already initialized and three does the same with the super method. There is a parameterless constructor meaning that super doesn't need to be called for option I. But in option III it is invoking a variable from the parent class and therefore it needs the super keyword. 
