@@ -1,8 +1,16 @@
 /**
  * This is a class that tests the Deck class.
  *
- *  < Your Name >
- *  < Today's Date >
+ *  <Gruhith Yerramalli >
+ * <4/26/23>
+ * 
+ * PMR
+ * ------------------------------------------
+ * (+): Easy to make the methods in Deck.java and also easy to initialize.
+ * 
+ * (-): Took a little bit to figure out the double for loop. I realized i had looped i in the nested loop instead of j and that was why I was getting an out of bounds error. 
+ * -------------------------------------------------------------------------
+ * In the Future: Do more of these types of things so that I get a better understanding of them. 
  */
 
 public class DeckTester
