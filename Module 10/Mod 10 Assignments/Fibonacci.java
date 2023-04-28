@@ -44,6 +44,9 @@ public class Fibonacci {
 
                 System.out.println("The Fibonacci of " + n + " is " + fibonacci);  
                 
+                //this is the line of code that created the error. By deleting this there will be no error and program works flawlessly.
+                //in.close(); 
+
             }
         }
         
